@@ -1,16 +1,13 @@
 import './ExpenseItem.css';
+import { IExpenses } from './interfaces';
 
-const ExpenseItem = () => {
-  const expenseDate = new Date(2022, 10, 28);
-  const expenseTitle = 'Car Insurance';
-  const expenseAmount = 294.67;
-
+const ExpenseItem = ({ title, amount, date }: IExpenses) => {
   return (
     <div className='expense-item'>
-      <div>{expenseDate.toDateString()}</div>
+      <div>{date.toDateString()}</div>
       <div className='expense-item__description'>
-        <h2>{expenseTitle}</h2>
-        <h2 className='expense-item__price'>${expenseAmount}</h2>
+        <h2>{amount}</h2>
+        <h2 className='expense-item__price'>${amount}</h2>
       </div>
     </div>
   );
