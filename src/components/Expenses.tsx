@@ -2,10 +2,11 @@ import React, { FC } from 'react';
 import ExpenseItem from './ExpenseItem';
 import { ExpenseProps } from './interfaces';
 import './Expenses.css';
+import Card from './Card';
 
 const Expenses: FC<ExpenseProps> = ({ items }) => {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       {items.map((item) => (
         <ExpenseItem
           key={item.id}
@@ -14,7 +15,7 @@ const Expenses: FC<ExpenseProps> = ({ items }) => {
           date={item.date}
         />
       ))}
-    </div>
+    </Card>
   );
 };
 
