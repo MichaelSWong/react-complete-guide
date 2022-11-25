@@ -8,3 +8,7 @@ export interface IExpenses {
 export interface IDate {
   date: Date;
 }
+
+export interface ExpenseProps {
+  items: IExpenses[];
+}
