@@ -4,3 +4,7 @@ export interface IExpenses {
   amount: number;
   date: Date;
 }
+
+export interface IDate {
+  date: Date;
+}
