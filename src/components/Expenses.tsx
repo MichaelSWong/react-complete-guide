@@ -1,10 +1,9 @@
-import React, { FC } from 'react';
 import ExpenseItem from './ExpenseItem';
-import { ExpenseProps } from './interfaces';
+import { IExpenses } from './interfaces';
 import './Expenses.css';
 import Card from './Card';
 
-const Expenses: FC<ExpenseProps> = ({ items }) => {
+const Expenses = ({ items }: { items: IExpenses[] }) => {
   return (
     <Card className="expenses">
       {items.map((item) => (
