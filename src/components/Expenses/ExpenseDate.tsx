@@ -1,4 +1,4 @@
-import { IDate } from './interfaces';
+import { IDate } from '../interfaces';
 import './ExpenseDate.css';
 
 const ExpenseDate = ({ date }: IDate) => {

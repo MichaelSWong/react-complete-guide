@@ -1,7 +1,8 @@
+import { IExpenses } from '../interfaces';
+import Card from '../UI/Card';
 import ExpenseItem from './ExpenseItem';
-import { IExpenses } from './interfaces';
+
 import './Expenses.css';
-import Card from './Card';
 
 const Expenses = ({ items }: { items: IExpenses[] }) => {
   return (
