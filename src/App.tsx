@@ -1,6 +1,7 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
 import { IExpenses } from './components/interfaces';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
   const expenses: IExpenses[] = [
@@ -26,7 +27,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <h2>Let's get started!!</h2>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
